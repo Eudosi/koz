@@ -1,0 +1,54 @@
+.circle {
+  border-radius: 100%;
+  width: 80px;
+  height: 80px;
+  background-color: rgb(255, 0, 0);
+  animation: dol 4s infinite;
+}
+
+.div2 {
+  width: 200px;
+  height: 200px;
+  background-color: rgb(8, 32, 249);
+  transition: 2s;
+}
+
+.div2:hover {
+  background-color: antiquewhite;
+  scale: 1.2;
+  transform: rotateZ(360deg);
+}
+
+.container {
+  border: 1px solid black;
+  width: 350px;
+}
+
+@keyframes dol {
+  0% {
+    transform: translate(0px);
+  }
+  50% {
+    transform: translate(250px);
+  }
+  100% {
+    transform: translate(50px);
+  }
+}
+
+.zag {
+  width: 100px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(720deg);
+  }
+}
